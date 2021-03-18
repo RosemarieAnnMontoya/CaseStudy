@@ -1,0 +1,40 @@
+public class MethodOverloading {
+
+   public static void main(String[] args) {
+      int a = 15;
+      int b = 23;
+      double c = 6.5;
+      double d = 10.8;
+      int result1 = minFunction(a, b);
+      
+      // same function name with different parameters
+      double result2 = minFunction(c, d);
+      System.out.println("Minimum Value = " + result1);
+      System.out.println("Minimum Value = " + result2);
+   }
+
+   // for integer
+   public static int minFunction(int j1, int j2) {
+      int min;
+      if (j1 > j2)
+         min = j2;
+      else
+         min = j1;
+
+      return min; 
+   }
+   
+   // for double
+   public static double minFunction(double j1, double j2) {
+     double min;
+      if (j1 > j2)
+         min = j2;
+      else
+         min = j1;
+
+      return min; 
+      
+   }
+}
+
+
